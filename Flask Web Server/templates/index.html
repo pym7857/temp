@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ympark2</title>
+  <script type="text/javascript" src="{{url_for('static', filename='js/excel.min.js')}}"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{{url_for('static', filename='css/mdb.min.css')}}" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="{{url_for('static', filename='css/style.min.css')}}" rel="stylesheet">
+  <!-- 나눔 바른 고딕 웹 폰트 적용하기 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+
+    html,
+    body,
+    header,
+    .carousel {
+      height: 100%;
+    }
+
+    .wrap{
+     width: 1000px;
+     height: 330px;
+     overflow-x: scroll;
+     white-space:nowrap
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331!important;
+            }
+        }
+
+    .hangul {
+        font-family: 'Nanum Barun Gothic' !important;
+    }
+
+    li {float:left; list-style:none; margin:1px;}
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#" target="_blank">
+        <strong class="hangul" style="color: #61dafb; font-weight: bold;">What If Simulation</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ympark2
+            </a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <div id="down_btn" style="color: #61dafb; cursor: pointer; border: 2px solid #61dafb; 
+            height:38px; line-height:38px; text-align:right; font-weight: bold;">
+            <i class="fa fa-search"></i> 결과 확인
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="join.html">회원가입&nbsp
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/pym7857/"
+              target="_blank" style="color:red; font-weight:bold; font-size:150%">
+              <i class="fa fa-github mr-2"></i>GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Links -->
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop>
+            <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" >
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong style="font-family: 'Nanum Barun Gothic'; color: #61dafb; font-weight: 900; font-size: 130%;">
+                  LS ELECTRIC 매출 예측
+                </strong>
+              </h1>
+
+              <p>
+                <strong style="font-family: 'Nanum Barun Gothic'">
+                  빠르고 정확하게 대외변수 변동에 따른 
+                  자사 매출의 변동을 예측합니다. <br>
+                  선형회귀를 이용하여, 매출을 예측하는 방법을 사용했습니다. <br>
+                </strong>
+              </p>
+
+              <p style="font-size: 50%;">
+                통계학에서, 선형 회귀는 종속 변수 y와 한 개 이상의 독립 변수 X와의 선형 상관 관계를 
+                  모델링하는 회귀분석 기법입니다. <br>
+                  한 개의 설명 변수에 기반한 경우에는 단순 선형 회귀, 
+                  둘 이상의 설명 변수에 기반한 경우에는 다중 선형 회귀라고 합니다.
+              </p>
+
+              <a target="_blank" href="https://github.com/pym7857/"
+              target="_blank" class="btn btn-outline-white btn-lg">LET'S GO GITHUB
+                <i class="fa fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
+
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+            <!-- Main heading -->
+            <h3 class="h3 mb-3" style="font-family: 'Nanum Barun Gothic'">Linear Regression</h3>
+            <!-- Main heading -->
+
+            <p style="font-family: 'Nanum Barun Gothic'">
+              약 100여개의 대외변수와 자사 매출의 연관성을 분석한 결과, <br>
+              그 중 
+              <b>
+                <span style="color: blue">건설기성액</span>
+              </b>과 
+              <b>
+                <span style="color: blue">전산업생산지수</span>
+              </b>가 유의미한 대외변수로 판단되었고, <br>
+              이 두 변수를 사용해서 매출예측을 수행 했습니다. <br>
+              <b>
+                <span style="color: blue">최근 3개월</span>
+              </b>
+              간의 정확도는 아래 그래프와 같습니다.
+            </p>
+
+            <hr>
+            <!-- CTA -->
+            <a target="_blank" href="https://github.com/pym7857/"
+              style="font-family: 'Nanum Barun Gothic'" class="btn btn-grey btn-md">전체 소스코드 다운로드
+              <i class="fa fa-download ml-1"></i>
+            </a>
+            <br><br>
+            <img style="width:500px; height:350px" src="{{url_for('static', filename='img/3month.PNG')}}" class="img-fluid z-depth-1-half" alt="">
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+            <!--Grid row-->
+            <div class="row">
+              <h3 class="h3 mb-3" style="font-family: 'Nanum Barun Gothic'">전사매출 & 건설기성액</h3>
+              <img style="width:600px; height:300px" src="{{url_for('static', filename='img/[100]_gs.PNG')}}" class="img-fluid z-depth-1-half" alt="">
+            </div>
+            <!--Grid row-->
+
+            <br>
+
+            <!--Grid row-->
+            <div class="row">
+              <h3 class="h3 mb-3" style="font-family: 'Nanum Barun Gothic'">전사매출 & 전산업생산지수</h3>
+              <img style="width:600px; height:300px" src="{{url_for('static', filename='img/[100]_js.PNG')}}" class="img-fluid z-depth-1-half" alt="">
+            </div>
+            <!--Grid row-->
+          
+          </div>
+          <!--Grid column-->
+
+
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+
+      <!--Section: index -->
+      <section>
+        <h3 class="h3 text-center mb-5" style="font-family: 'Nanum Barun Gothic'; color: #24769c;">
+          건설기성액, 전산업생산지수 <br> (2013~2020.5)
+        </h3>
+        <div class="wrap">
+          <input type='file' id='file'/>
+          <div id='grid'></div>
+        </div>
+        <hr>
+      </section>
+
+      <!--Section: Main features & Quick Start-->
+      <section id="here_to_scroll">
+        <h3 class="h3 text-center mb-5" style="font-family: 'Nanum Barun Gothic'; color: #24769c">매출 예측</h3>
+        <p style="font-family: 'Nanum Barun Gothic' " >
+          다변인 선형회귀를 이용하여 실시간 매출예측을 합니다. <br>
+          <span style="color: blue">2013년 ~ 최근(2020년 5월)</span>까지의 데이터를 이용하였습니다.
+        </p>
+
+        <hr>
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <form action="/" method="post">
+              <!-- Default form group -->
+                  <!-- Default input -->
+                  <div class="form-group">
+                    <input type="radio" name="options" id="100" value="100" checked="checked"> <span style="color: red; font-weight:bold;">전사매출</span>
+                      &nbsp&nbsp&nbsp&nbsp
+                    <input type="radio" name="options" id="300" value="300"> <span style="color: red; font-weight:bold;">국내매출</span>
+                    <hr>
+                  </div>
+                  <!-- Default input -->
+                  <div class="form-group">
+                    <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">전월 대비 건설기성액 증감 %</label>
+                    <select style="font-family: 'Nanum Barun Gothic'" type="text" name="gs_percent" 
+                      class="form-control" id="formGroupExampleInput3" >
+                      <option>-10</option>
+                      <option>-7.5</option>
+                      <option>-5</option>
+                      <option>-2.5</option>
+                      <option selected>0</option>
+                      <option>+2.5</option>
+                      <option>+5</option>
+                      <option>+7.5</option>
+                      <option>+10</option>
+                    </select>
+                  </div>
+                  <!-- Default input -->
+                  <!-- Default input -->
+                  <div class="form-group">
+                    <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput">전월 대비 전산업생산지수 증감 %</label>
+                    <select style="font-family: 'Nanum Barun Gothic'" type="text" name="js_percent" 
+                      class="form-control" id="formGroupExampleInput3" >
+                      <option>-10</option>
+                      <option>-7.5</option>
+                      <option>-5</option>
+                      <option>-2.5</option>
+                      <option selected>0</option>
+                      <option>+2.5</option>
+                      <option>+5</option>
+                      <option>+7.5</option>
+                      <option>+10</option>
+                    </select>
+                  </div>
+                  <hr>
+                  <!-- Default input -->
+                  <div class="form-group">
+                    <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput"><mark>전월 대비 대외변수 증감 %</mark></label>
+                    <select style="font-family: 'Nanum Barun Gothic'" type="text" name="all_percent" 
+                      class="form-control" id="formGroupExampleInput3" >
+                      <option>-10</option>
+                      <option>-7.5</option>
+                      <option>-5</option>
+                      <option>-2.5</option>
+                      <option selected>0</option>
+                      <option>+2.5</option>
+                      <option>+5</option>
+                      <option>+7.5</option>
+                      <option>+10</option>
+                    </select>
+                  </div>
+                  <!-- Default input -->
+                  <div class="form-group">
+                    <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput"><mark>연간 계획: 시작 년월(月)</mark></label>
+                    <input style="font-family: 'Nanum Barun Gothic'" type="month" name="start_date" 
+                      class="form-control" id="formGroupExampleInput2" 
+                      value="2020-06">
+                  </div>
+                  <!-- Default input -->
+                  <div class="form-group">
+                    <label style="font-family: 'Nanum Barun Gothic'" for="formGroupExampleInput"><mark>연간 계획: 종료 년월(月)</mark></label>
+                    <input style="font-family: 'Nanum Barun Gothic'" type="month" name="end_date" 
+                      class="form-control" id="formGroupExampleInput2" 
+                      value="2020-12">
+                  </div>
+              <!-- Default form group -->
+              <button style="font-family: 'Nanum Barun Gothic' !important;" id="pred_btn"
+                type="submit" class="btn btn-primary btn-md pull-right">예측하기</button>
+
+            </form>
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            {% if option %}
+              <h5 class="text-center mt-3"> 
+                <b> 
+                  <strong>계정코드 : </strong>
+                  <span style="color: red"> <strong>{{ option }}</strong> </span>
+                </b> 
+              </h5>
+            {% endif %}
+
+            
+            <h5 class="text-center mt-3"> 
+              <b> 
+                {% if now_selected_percent0 %}
+                  <strong>전월 대비 대외변수 증감 : </strong>
+                  <span style="color: red"> <strong>{{ now_selected_percent0 }} %</strong> </span>
+                {% endif %}
+                <br>
+                {% if now_selected_percent1 %}
+                  <strong>전월 대비 건설기성액 증감 : </strong>
+                  <span style="color: red"> <strong>{{ now_selected_percent1 }} %</strong> </span>
+                {% endif %}
+                <br>
+                {% if now_selected_percent2 %}
+                  <strong>전월 대비 전산업생산지수 증감 : </strong>
+                  <span style="color: red"> <strong>{{ now_selected_percent2 }} %</strong> </span>
+                {% endif %}
+              </b> 
+            </h5>
+            
+
+            {% if gs %}
+              <h5 class="text-center mt-3"> 
+                <b> 
+                  <strong>건설기성액 : </strong>
+                  <span style="color: red"> {{ gs }}억원</span>
+                </b> 
+              </h5>
+            {% endif %}
+
+            {% if js %}
+              <h5 class="text-center mt-3"> 
+                <b> 
+                  <strong>전산업생산지수 : </strong>
+                  <span style="color: red"> {{ js }} </span>
+                </b> 
+              </h5>
+            {% endif %}
+
+            <hr>
+
+            <p class="h5 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">
+              <b>
+                <span style="color: blue;">선형회귀</span>
+              </b> 예측 결과
+            </p>
+
+            {% if all_price_list %}
+              <h5 class="text-center mt-3">
+                <span style="color: black;">
+                  <strong>
+                  {% if count > 0 %}
+                  해당 월(月)의 예상 매출은<br>
+                    {% for i in range(count) %}
+                      {{ date_list[i] }}:
+                      {% if i < prev_count %}
+                        <span style="color: black"><b>{{ all_price_list[i] + '억원(실 매출)' }}</b></span>
+                      {% else %}
+                        <span style="color: blue"><b>{{ all_price_list[i] + '억원(예측 값)' }}</b></span>
+                      {% endif %}
+                      <br>
+                    {% endfor %}
+                  {% else %}
+                  다음 월(月)의 예상 매출은<br>
+                    <span style="color: blue"><b>{{ all_price_list[0] + '억원' }}</b></span>
+                  {% endif %}
+
+                  <br>
+
+                  {% if sum_price %}
+                    해당 기간 동안의 <b style="color:red;">총 예상 매출</b>은 <b>{{ sum_price + '억원' }}</b> 입니다. <br>
+                  {% endif %}
+                  </strong>
+                </span>
+              </h5>
+            {% endif %}
+
+            <hr>
+
+            <p class="h5 text-center mb-4" style="font-family: 'Nanum Barun Gothic'">
+              <b>
+                  <span style="color: blue">R-Square</span>
+                </b> 값
+            </p>
+            {% if r2 %}
+              <h5 class="text-center mt-3">
+                R-Square 값은 <b>{{ r2 }}</b> 입니다.<br><br>
+              </h5>
+
+              <div class="text-center mt-3" style="border: 1px solid black;">
+                즉, <b>{{ r2 }}</b> 의 매출 변동성이 대외변수들로 설명된다라는 뜻입니다. <br>
+                만일 대외변수들의 값을 알고 있다면, 매출을 정확히 예측하기 위해 <br>
+                <b>{{ r2 }}</b> 의 정보를 가졌다라고 설명할 수 있습니다.
+              </b>
+            {% endif %}
+
+          </div>
+          <!--/Grid column-->
+
+        
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5">
+
+      <!-- 원래 그림 위치 였던 곳 section -->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      <br>
+      © 2020 Copyright:
+      <a href="https://github.com/pym7857/" target="_blank" style="color: #61dafb; font-weight:bold;"> 
+        박영민 (DT 추진단)
+        <br>
+        ympark2@lselectric.co.kr
+        <br>
+        <br>
+      </a>
+      <a class="btn btn-outline-white" href="https://github.com/pym7857/" target="_blank" role="button">LET'S GO GITHUB
+        <i class="fa fa-graduation-cap ml-2"></i>
+      </a>
+      <br>
+      <br>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+
+  <!-- 엑셀을 읽어와서 html웹에 보여주기(Sheet.JS 이용) -->
+  <script type="text/javascript">
+    var test1 = null, test2 = null;
+    function gridExcelToWeb(file, target){
+        var reader = new FileReader();
+
+        reader.onload = function (evt) {
+            if (evt.target.readyState == FileReader.DONE) {
+                var data = evt.target.result;  //해당 데이터, 웹 서버에서 ajax같은거로 가져온 blob 형태의 데이터를 넣어주어도 동작 한다.
+                data = new Uint8Array(data);
+                var workbook = XLSX.read(data, { type: 'array' });
+                var sheetName = '';
+                workbook.SheetNames.forEach( function(data, idx){   //시트 여러개라면 이 안에서 반복문을 통해 돌리면 된다.
+                    if(idx == 0){
+                        sheetName = data;
+                    }
+                });
+                test1 = workbook;
+
+                var toHtml = XLSX.utils.sheet_to_html(workbook.Sheets[sheetName], { header: '' });
+
+                target.html(toHtml);
+                target.find('table').attr({class:'table table-bordered',id:'excelResult'});  //id나 class같은거를 줄 수 있다.
+                test2 = toHtml;
+                $('#excelResult').find('tr').each(function(idx){
+                    if(idx <=1 ){ 
+                        $(this).css({'background-color':'#969da5a3'});
+                    }
+                });
+            }
+        };
+        reader.readAsArrayBuffer(file);
+    }
+
+    $('#file').change( function(){
+        const selectedFile = $(this)[0].files[0];
+        gridExcelToWeb(selectedFile,  $('#grid'))
+    });
+  </script>
+
+  <!-- 버튼 누르면, 결과창 위치로 이동 -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#down_btn').click(function(){
+        var offset = $('#here_to_scroll').offset(); //선택한 태그의 위치를 반환
+        //animate()메서드를 이용해서, 선택한 태그의 스크롤 위치를 지정해서 0.3초 동안 부드럽게 해당 위치로 이동함 
+        $('html').animate({scrollTop : offset.top}, 300);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
